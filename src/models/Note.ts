@@ -1,4 +1,4 @@
-import { INote } from "../interfaces/INote";
+import { Note as INote } from "../interfaces/Note";
 
 export class Note implements INote {
   public created: Date = new Date();

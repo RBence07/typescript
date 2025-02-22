@@ -1,5 +1,5 @@
 import { Note } from "./Note";
-import { IPersonalNote } from "../interfaces/IPersonalNote";
+import { PersonalNote as IPersonalNote } from "../interfaces/PersonalNote";
 
 export class PersonalNote extends Note implements IPersonalNote {
   constructor(title: string, content: string, color: string, tags?: string[]) {

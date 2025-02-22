@@ -1,6 +1,6 @@
 import { Note } from "./Note";
 import { Status } from "./Status";
-import { IWorkNote } from "../interfaces/IWorkNote";
+import { WorkNote as IWorkNote } from "../interfaces/WorkNote";
 
 export class WorkNote extends Note implements IWorkNote {
   public status: Status = Status.NotStarted;

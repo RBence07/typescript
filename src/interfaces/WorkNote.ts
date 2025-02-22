@@ -1,7 +1,7 @@
-import { INote } from "./INote";
+import { Note } from "./Note";
 import { Status } from "../models/Status";
 
-export interface IWorkNote extends INote {
+export interface WorkNote extends Note {
   status: Status;
 
   updateStatus(status: Status): void;

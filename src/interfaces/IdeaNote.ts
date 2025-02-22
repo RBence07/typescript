@@ -1,6 +1,6 @@
-import { INote } from "./INote";
+import { Note } from "./Note";
 
-export interface IIdeaNote extends INote {
+export interface IdeaNote extends Note {
   feasibility: number | null;
 
   setFeasibility(feasibility: number): void;

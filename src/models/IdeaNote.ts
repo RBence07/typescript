@@ -1,5 +1,5 @@
-import { IIdeaNote } from "../interfaces/IIdeaNote";
 import { Note } from "./Note";
+import { IdeaNote as IIdeaNote} from "../interfaces/IdeaNote";
 
 export class IdeaNote extends Note implements IIdeaNote {
   public feasibility: number | null = null;
