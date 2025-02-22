@@ -17,8 +17,8 @@ export class IdeaNote extends Note implements IIdeaNote {
     }
   }
 
-  generateString(): string {
-    let info = super.generateString();
+  toString(): string {
+    let info = super.toString();
     info += `Feasibility: ${this.feasibility}\n`;
     return info;
   }
@@ -27,5 +27,9 @@ export class IdeaNote extends Note implements IIdeaNote {
     if (feasibility >= 1 && feasibility <= 10) {
       this.feasibility = feasibility;
     }
+  }
+
+  logNote(): void {
+    console.log(this.toString());
   }
 }

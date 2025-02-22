@@ -10,7 +10,7 @@ export class Note implements INote {
     public tags: string[] = []
   ) {}
 
-  generateString(): string {
+  toString(): string {
     let info = `Title: ${this.title}\n`;
     info += `Content: ${this.content}\n`;
     info += `Created At: ${this.created}\n`;
@@ -29,7 +29,7 @@ export class Note implements INote {
     }
   }
 
-  displayNote(): void {
-    console.log(this.generateString());
+  logNote(): void {
+    console.log(this.toString());
   }
 }

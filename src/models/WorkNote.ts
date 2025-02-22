@@ -18,14 +18,14 @@ export class WorkNote extends Note implements IWorkNote {
     }
   }
 
-  generateString(): string {
-    let info = super.generateString();
+  toString(): string {
+    let info = super.toString();
     info += `Status: ${this.status}\n`;
     return info;
   }
 
   displayNote(): void {
-    console.log(this.generateString());
+    console.log(this.toString());
   }
 
   updateStatus(status: Status): void {

@@ -26,17 +26,17 @@ const notes: Note[] = [
 ];
 
 notes.forEach((note) => {
-  note.displayNote();
+  note.logNote();
 });
 
 console.log("------------\n");
 
 if (isWorkNote(notes[1])) {
   (notes[1] as WorkNote).updateStatus(Status.Completed);
-  notes[1].displayNote();
+  notes[1].logNote();
 }
 
 if (isIdeaNote(notes[1])) {
   (notes[2] as IdeaNote).setFeasibility(20);
-  notes[1].displayNote();
+  notes[1].logNote();
 }

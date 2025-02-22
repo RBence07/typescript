@@ -5,7 +5,7 @@ export interface INote {
   tags: string[];
   created: Date;
 
-  generateString(): string;
+  toString(): string;
   addTag(tag: string): void;
-  displayNote(): void;
+  logNote(): void;
 }
